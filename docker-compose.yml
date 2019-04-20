@@ -1,0 +1,12 @@
+version: '2'
+services:
+  db:
+    image: postgres:10.3
+    ports:
+      - "5432:5432"
+    volumes_from:
+      - backups
+  backups:
+    image: busybox
+    volumes:
+      - ./tmp/data_backups:/usr/backups
