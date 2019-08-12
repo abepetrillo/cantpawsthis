@@ -1,0 +1,10 @@
+<div id="page-index">
+  <div class="posts">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <div class="title"><%= post.title %></div>
+      <div class="summary"> <%= post.summary %></div>
+    </div>
+  <% end %>
+  </div>
+</div>

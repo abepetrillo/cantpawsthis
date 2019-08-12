@@ -12,7 +12,18 @@
   <body>
     <span class="notice"><%= notice %></span>
     <span class="alert"><%= alert %></span>
-
-    <%= yield %>
+    <header>
+      header pic
+    </header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/posts">Posts</a>
+    </nav>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+    footer
+    </footer>
   </body>
 </html>
