@@ -1,10 +1,10 @@
 <div id="page-index">
   <div class="posts">
   <% @posts.each do |post| %>
-    <div class="post">
+    <a href="<%= post_path(post) %>" class="post">
       <div class="title"><%= post.title %></div>
       <div class="summary"> <%= post.summary %></div>
-    </div>
+    </a>
   <% end %>
   </div>
 </div>
