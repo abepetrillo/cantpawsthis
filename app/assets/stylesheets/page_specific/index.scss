@@ -5,6 +5,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    :hover {
+      background-color: none;
+    }
     .post {
       flex-basis: 25%
     }
