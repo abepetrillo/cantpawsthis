@@ -13,10 +13,15 @@
     a.post {
       flex-basis: 33%;
       min-height: 200px;
-      img {
+      img, .placeholder {
         width: 100%;
         height: 100%;
       }
+
+      .placeholder {
+        background-image: linear-gradient(to bottom, rgba(171,142,205,0) 0%, #ab8ecd 80%); 
+      }
+
       .title {
         height: 30px;
         margin-left: 10px;
