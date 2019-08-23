@@ -12,9 +12,10 @@
     }
     a.post {
       flex-basis: 33%;
+      min-height: 200px;
       img {
         width: 100%;
-        min-height: 200px;
+        height: 100%;
       }
       .title {
         height: 30px;
