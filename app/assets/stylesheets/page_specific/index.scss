@@ -5,11 +5,15 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     :hover {
       background-color: none;
     }
-    .post {
-      flex-basis: 33%
+    a.post {
+      flex-basis: 33%;
+      img {
+        width: 100%;
+      }
     }
   }
 }

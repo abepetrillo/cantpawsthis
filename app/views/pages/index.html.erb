@@ -2,6 +2,7 @@
   <div class="posts">
   <% @posts.each do |post| %>
     <a href="<%= post_path(post) %>" class="post">
+      <img src="<%= post.featured_image_url %>" />
       <div class="title"><%= post.title %></div>
       <div class="summary"> <%= post.summary %></div>
     </a>
