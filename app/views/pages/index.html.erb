@@ -2,12 +2,14 @@
   <div class="posts">
   <% @posts.each do |post| %>
     <a href="<%= post_path(post) %>" class="post">
-      <% if post.featured_image_url %>
-        <img src="<%= post.featured_image_url %>" />
-      <% else %>
-        <div class="placeholder"></div>
-      <% end %>
-      <div class="title"><%= post.title %></div>
+      <div class="container">
+        <% if post.featured_image_url %>
+          <img src="<%= post.featured_image_url %>" />
+        <% else %>
+          <div class="placeholder"></div>
+        <% end %>
+        <div class="title"><%= post.title %></div>
+      </div>
     </a>
   <% end %>
   </div>

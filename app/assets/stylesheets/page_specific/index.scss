@@ -1,3 +1,5 @@
+$title-height: 18px;
+
 #page-index {
   width: 100%;
 
@@ -12,8 +14,18 @@
       background-color: none;
     }
     a.post {
+      display: flex;
+      flex-direction: column;
       flex-basis: 30%;
-      min-height: 200px;
+      background-color: #79589F;
+      padding: $title-height $title-height 0px $title-height;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .container {
+        align-self: center;
+        width: 100%;
+      }
       img, .placeholder {
         width: 100%;
       }
@@ -23,8 +35,8 @@
       }
 
       .title {
-        height: 30px;
-        margin-left: 10px;
+        height: $title-height;
+        margin-left: 30px;
         font-size: 20px;
         position: relative;
         bottom: 30px;
