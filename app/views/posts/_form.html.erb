@@ -21,7 +21,10 @@
     <%= form.file_field :featured_image %>
   </div>
 
-
+  <div class="field">
+    <%= form.label :tags %>
+    <%= form.text_field :tags, value: post.tags.join(',') %>
+  </div>
 
   <div class="field">
     <%= form.rich_text_area :content %>
