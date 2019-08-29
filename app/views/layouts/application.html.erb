@@ -16,7 +16,9 @@
       <nav>
         <a href="/">Home</a>
         <a href="/about">About</a>
+        <% if current_user %>
         <a href="/posts">Posts</a>
+        <% end %>
       </nav>
     </header>
     <main>
