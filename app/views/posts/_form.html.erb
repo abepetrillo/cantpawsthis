@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :tags %>
-    <%= form.text_field :tags, value: post.tags.join(',') %>
+    <%= form.text_field :tags, value: (post.tags || []).join(',') %>
   </div>
 
   <div class="field">
