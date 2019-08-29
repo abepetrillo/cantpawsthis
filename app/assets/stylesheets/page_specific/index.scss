@@ -18,10 +18,11 @@ $title-height: 40px;
       flex-direction: column;
       flex-basis: 30%;
       background-color: #79589F;
-      padding: 10px 10px 0px 10px;
+      padding: 10px 10px 5px 10px;
       justify-content: center;
       margin-bottom: 20px;
       text-decoration: none;
+      border-radius: 5px;
 
       .container {
         align-self: center;
